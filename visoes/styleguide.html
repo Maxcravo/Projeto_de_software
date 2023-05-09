@@ -1,0 +1,134 @@
+<!--
+    GUIA DE ESTILO
+    v1.0 - Sarah
+    Dia: xx/05/2023
+-----------------------------------------
+
+    Se for preciso, copiem as coisas
+    daqui.
+
+    Se baseiem aqui pra colocar as 
+    classes, e copiem o modo como 
+    checkboxes e radio buttons foram 
+    organizados, pls, se não não funciona
+    o estilo. Não precisa do fieldset, mas
+    o input dentro do label com as classes
+    certas sim.
+    
+-----------------------------------------
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/global.css">
+    
+    <title>Styleguide</title>
+</head>
+<body>
+    <header></header>
+
+    <main>
+        <div class="left">
+            <div class="titulos">
+                <h1>Título H1</h1>
+                <h2>Título H2</h2>
+                <h3>Título H3</h3>
+                <h4>Título H4</h4>
+            </div>
+
+            <div class="textos">
+                <p class="texto-grande negrito">Texto grande negrito</p>
+                <p class="texto-grande">Texto grande</p>
+
+                <p class="texto-normal negrito">Texto normal negrito</p>
+                <p class="texto-normal">Texto normal</p>
+
+                <p class="texto-pequeno negrito">Texto pequeno negrito</p>
+                <p class="texto-pequeno">Texto pequeno</p>
+            </div>
+
+            <div class="etiquetas">
+                <span class="etiqueta pequena azul"> Etiqueta pequena</span>
+                <span class="etiqueta grande verde"> Etiqueta grande</span>
+                <span class="etiqueta grande laranja"> Etiqueta grande</span>
+            </div>
+
+            <div class="links">
+                <a href= "#" class="link texto">Link em texto</a>
+                <a href= "#" class="link grande">Link grande</a>
+                <a href= "#" class="link destacado verde">Link destacado</a>
+                <a href= "#" class="link destacado laranja">Link destacado</a>
+            </div>
+
+            <div class="infos">
+                <p class="info destacada negrito">Info destacada negrito</p>
+                <p class="info destacada">Info destacada</p>
+                <p class="info nao-destacada negrito">Info não destacada negrito</p>
+                <p class="info nao-destacada">Info não destacada</p>
+            </div>
+
+            <div class="botoes">
+                <a href="" class="botao pequeno verde">Botão pequeno</a>
+                <a href="" class="botao normal azul">Botão normal</a>
+                <a href="" class="botao grande laranja">Botão grande</a>
+                <a href="" class="botao extra-grande amarelo">Botão extra grande</a>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="form">
+                <form action="">
+                    <label for="texto">Campo de texto</label>
+                    <input type="text" name="texto" id="texto">
+
+                    <label for="area">Text area</label>
+                    <textarea name="area" id="area" cols="30" rows="10"></textarea>
+
+                    <label for="select">Select</label>
+                    <select name="select" id="select">
+                        <option value="1">Opção 1</option>
+                        <option value="2">Opção 2</option>
+                        <option value="3">Opção 3</option>
+                    </select>
+
+                    <label for="checkboxes">Checkbox</label>
+                    <fieldset class="checkboxes">
+                        <label class="checkbox" for="1">
+                            <input type="checkbox" name="1" id="1"> Item 1
+                        </label>
+                        <label class="checkbox" for="2">
+                            <input type="checkbox" name="2" id="2"> Item 2
+                        </label>
+                        <label class="checkbox" for="3">
+                            <input type="checkbox" name="3" id="3"> Item 3
+                        </label>
+                    </fieldset>
+
+                    <!-- radio buttons devem ter mesmo name pra permitir uma resposta só-->
+                    <label for="radio">Radio button</label>
+                    <fieldset class="radio">
+                        <label for="1" class="radio">
+                            <input type="radio" name="radio" id="1"> Item 1
+                        </label>
+                        <label for="2" class="radio">
+                            <input type="radio" name="radio" id="2"> Item 2
+                        </label>
+                        <label for="3" class="radio">
+                            <input type="radio" name="radio" id="3"> Item 3
+                        </label>
+                    </fieldset>
+                    
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
