@@ -1,0 +1,16 @@
+{
+  "name": "projeto_de_software",
+  "version": "1.0.0",
+  "description": "Trabalho da disciplina Projeto de Software (IC819).",
+  "main": "AniPend.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sequelize": "^6.31.1",
+    "sqlite3": "^5.1.6"
+  }
+}
