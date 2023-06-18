@@ -2,8 +2,15 @@
 
 -----------------------------------------
     ROOT CSS
-    v1.0 - Sarah
-    Dia: xx/05/2023
+    v1.1 - Sarah
+    Dia: 18/06/2023
+-----------------------------------------
+
+    ALTERAÇÕES v1.1:
+    - Adicionado cor padrão no link destacado
+    - Adicionado cor hover nos links
+    - Adicionado margem e cor na main
+
 -----------------------------------------
 
     TODO HTML PRECISA DESSE ARQUIVO
@@ -55,6 +62,11 @@
     /* fonte padrão de texto */
     font-family: 'Jost', sans-serif;
 
+}
+
+main {
+    margin: 2rem 15rem;
+    background-color: var(--fundo-form);
 }
 
 /* 
@@ -159,10 +171,14 @@ h2, h4 {
     link destacado laranja -> class="link destacado laranja"
 */
 
-.link {
+.link, .link-destacado {
     text-decoration: underline;
     font-weight: 600;
     color: var(--azul);
+}
+
+.link:hover, .link-destacado:hover {
+    color: var(--azul-hover);
 }
 
 .link.texto {
@@ -177,11 +193,11 @@ h2, h4 {
     text-transform: uppercase;
 }
 
-.link.laranja {
+.link.laranja, .link-destacado.laranja {
     color: var(--laranja);
 }
 
-.link.verde {
+.link.verde, .link-destacado.verde {
     color: var(--verde);
 }
 
