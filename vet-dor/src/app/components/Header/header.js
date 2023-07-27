@@ -8,13 +8,10 @@ export default function Header() {
   <div className="header_flex" >
     <div className="menu_header">
         <span>
-          QUEM SOMOS
+          <a class="nav-bar-item quem-somos">QUEM SOMOS</a>
         </span>
         <span>
-          CONTATO
-        </span>
-        <span>
-          TABELA DE PREÇOS
+          <a class="nav-bar-item contato">CONTATO</a>
         </span>
       </div>
       <img className="logo_menu" src={logo} />

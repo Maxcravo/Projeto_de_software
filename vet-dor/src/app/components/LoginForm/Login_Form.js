@@ -47,32 +47,30 @@ export default function Login_Form(){
   return(
 
 
-  <div className="form_All" > 
+  <div className="form_All"> 
 
-  <h2>Login </h2>
+    <h2>Faça login para gerenciar seus pets</h2>
 
-  <div className="form_Flex">
-  <form>
-    <div className="first_div" >
-      <label for="name" >Nome de Usuário</label>
-      <input id="name" value={userName} onChange={(e)=> handleInputChange(e)}  required  name="name" placeholder="Seu nome" type="text"/>
+    <div className="form_Flex form">
+      <form>
+        <div className="first_div" >
+          <label for="name" >Nome de usuário</label>
+          <input id="name" value={userName} onChange={(e)=> handleInputChange(e)}  required  name="name" placeholder="Seu nome" type="text"/>
 
-      <label for="password" >Senha</label>
-      <input  id="password" name="password" value={pw} onChange={(e)=> handleInputChange(e)} required type="password"/>
+          <label for="password" >Senha</label>
+          <input  id="password" name="password" value={pw} onChange={(e)=> handleInputChange(e)} required type="password"/>
+          <a class="link texto submit_forgot_password" href="">Esqueceu a senha?</a>
+        </div>
 
-      
-    </div>
-
-    <div className="second_div">
-      
-      <div className="form_button" >
-        <button className="submit_password" type="submit">ENVIAR </button>
-        <button className="submit_forgot_password" type="submit">ESQUECI A SENHA </button>
-      </div>
-
-    </div>
-  </form>
-   
+        <div className="second_div">
+        
+          <div className="form_button" >
+            <button className="submit_password botao verde normal" type="submit">ENVIAR </button>
+            <a class="link texto button-sign-up" href="">Ainda não é cadastrado?</a>
+            {/* <button className="submit_forgot_password botao normal" type="submit">ESQUECI A SENHA </button> */}
+          </div>
+        </div>
+      </form>
     </div>
   </div>
   )

@@ -1,10 +1,15 @@
 .header_flex{
   height: 100%;
   width: 100%;
-  background-color: #245D61;
+  background-color: var(--azul);
+  color: var(--branco);
   display: flex;
   justify-content: space-between;
   align-items:flex-end;
+}
+
+.nav-bar-item:hover {
+  color: var(--verde)
 }
 
 .header_flex img{
@@ -15,7 +20,7 @@
 .menu_header{
   width: 30%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items:flex-end;
   position: relative;
   margin-left: 5%;

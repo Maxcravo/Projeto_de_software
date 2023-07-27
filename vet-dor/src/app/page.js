@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import * as root_styles from './globals.css'
 import Header from './components/Header/header.js'
 import Footer from './components/Footer/Footer'
 import Cadastro_Form from './components/CadastroForm/Cadastro_Form'
@@ -9,7 +10,7 @@ import Login_Form from './components/LoginForm/Login_Form'
 export default function Home() {
   return (
     <main >
-      {/* <Header/> */}
+      {<Header/>}
 
       {/*<Cadastro_Form/>*/}
 
