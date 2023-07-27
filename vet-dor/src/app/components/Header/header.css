@@ -36,6 +36,10 @@
   margin-top: 2%;
 }
 
+.header_icon:hover {
+  stroke: var(--verde);
+}
+
 .header_icon{
   margin-right: 10% ;
   cursor: pointer;
