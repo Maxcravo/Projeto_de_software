@@ -20,7 +20,7 @@ export default function Home() {
         {/* <AniProfile/> */}
       </main>
       
-      {/* <Footer/> */}
+      {<Footer/>}
     </span>
   )
 }
