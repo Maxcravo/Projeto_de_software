@@ -1,4 +1,4 @@
-.form_All{
+/* div.form_All{
   background-color: #D6E5E5;
   width: 70%;
   display: flex;
@@ -7,6 +7,12 @@
   margin-left: 15%;
   align-items: center;
   border-radius: 10px;
+} */
+
+div.form_All {
+  background-color: transparent;
+  width: auto;
+  margin: 0;
 }
 
 .form_Flex{
@@ -30,10 +36,26 @@ label{
   font-weight: 500;
 }
 
-.first_div{
+/* .first_div{
   display: flex;
   flex-direction: column;
 
+} */
+
+.campos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5%;
+  width: 100%;
+}
+
+form {
+  width: 55rem;
+}
+
+.first_div, .second_div {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .first_div input{
@@ -46,11 +68,11 @@ label{
   border: none;
 }
 
-.second_div{
+/* .second_div{
   margin-left: 8%;
   display: flex;
   flex-direction: column;
-}
+} */
 
 .second_div input{
   width: 380px;
@@ -71,9 +93,9 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type=number] {
+/* input[type=number] {
   -moz-appearance: textfield;
-}
+} */
 
 .form_Flex label{
   margin-bottom: 1.5%;
@@ -89,9 +111,13 @@ input[type=number] {
 }
 
 .form_button{
-  margin-top: 7%;
-  display: flex;
-  justify-content:space-between
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}
+
+.form_button .botao {
+  width: 190px;
 }
 
 .form_button button{
@@ -109,6 +135,11 @@ input[type=number] {
   width: 200px;
   background-color: #4285F4;
   cursor: pointer;
+  color: var(--branco);
+}
+
+button.botao {
+  width: 390px;
 }
 
 .submit_trad{

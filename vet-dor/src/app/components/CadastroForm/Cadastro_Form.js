@@ -54,46 +54,47 @@ export default function Cadastro_Form(){
     console.log(userName,cpf,email,pw,number);
 
   return(
+    <div className="form_All" >
 
-  <div className="form_All" >
+    <div className="form_Flex">
+    <form>
+      <h2>Cadastre-se e comece a cuidar dos seus pets </h2>
+      <div class="campos">
+        <div className="first_div" >
+          <label for="name" >Nome completo</label>
+          <input id="name" value={userName} onChange={(e)=> handleInputChange(e)}  required  name="name" placeholder="Seu nome" type="text"/>
 
-  <h2>Cadastre-se e comece a cuidar dos seus pets </h2>
+          <label for="cpf" >CPF (somente números) </label>
+          <input id="cpf" name="cpf" value={cpf} onChange={(e)=> handleInputChange(e)} required  placeholder="XXX-XXX-XXX-XX" type="number"/>
 
-  <div className="form_Flex">
-  <form>
-    <div className="first_div" >
-      <label for="name" >Nome Completo</label>
-      <input id="name" value={userName} onChange={(e)=> handleInputChange(e)}  required  name="name" placeholder="Seu nome" type="text"/>
+          <label for="dataNasc" >Data de nascimento </label>
+          <input  id="dataNasc" name="dataNasc" value={birthDate} onChange={(e)=> handleInputChange(e)} required placeholder="DD/MM/AAAA" type="date"/>
 
-      <label for="cpf" >CPF (somente números) </label>
-      <input id="cpf" name="cpf" value={cpf} onChange={(e)=> handleInputChange(e)} required  placeholder="XXX-XXX-XXX-XX" type="number"/>
+          <label for="cell" >Celular (somente números)</label>
+          <input id="cell" name="cell" value={number} onChange={(e)=> handleInputChange(e)} required  placeholder="(XX)XXXXX-XXXX " type="number"/>
+        </div>
 
-      <label for="dataNasc" >Data de nascimento </label>
-      <input  id="dataNasc" name="dataNasc" value={birthDate} onChange={(e)=> handleInputChange(e)} required placeholder="DD/MM/AAAA" type="date"/>
+        <div className="second_div">
+          <label for="mail" >E-mail</label>
+          <input id="mail" name="mail" value={email} onChange={(e)=> handleInputChange(e)} required placeholder="email@exemplo.com" type="email"/>
 
-      <label for="cell" >Celular (somente números)</label>
-      <input id="cell" name="cell" value={number} onChange={(e)=> handleInputChange(e)} required  placeholder="(XX)XXXXX-XXXX " type="number"/>
-    </div>
+          <label for="password" >Senha</label>
+          <input  id="password" name="password" value={pw} onChange={(e)=> handleInputChange(e)} required type="password"/>
 
-    <div className="second_div">
-      <label for="mail" >E-mail</label>
-      <input id="mail" name="mail" value={email} onChange={(e)=> handleInputChange(e)} required placeholder="email@exemplo.com" type="email"/>
+          <label for="repassword" >Repita a senha</label>
+          <input id="repassword" name="repassword" onChange={(e)=> handleInputChange(e)} required type="password"/>
 
-      <label for="password" >Senha</label>
-      <input  id="password" name="password" value={pw} onChange={(e)=> handleInputChange(e)} required type="password"/>
+          <div className="form_button" >
+            <button className="submit_google botao normal" type="submit">CADASTRAR COM GOOGLE </button>
+            <button className="submit_trad botao verde normal" type="submit"> CADASTRAR </button>
+          </div>
 
-      <label for="repassword" >Repita a senha</label>
-      <input id="repassword" name="repassword" onChange={(e)=> handleInputChange(e)} required type="password"/>
-
-      <div className="form_button" >
-        <button className="submit_google" type="submit">CADASTRAR COM GOOGLE </button>
-        <button className="submit_trad" type="submit"> CADASTRAR </button>
+        </div>
       </div>
-
+      
+    </form>
+    
+      </div>
     </div>
-  </form>
-   
-    </div>
-  </div>
   )
 }
