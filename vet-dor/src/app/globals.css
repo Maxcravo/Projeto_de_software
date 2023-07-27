@@ -38,6 +38,7 @@ font-family: 'Jost', sans-serif !important;
 
 .__className_0ec1f4 {
   font-family: 'Jost', sans-serif;
+  margin: 0;
 }
 /* 
 TÍTULOS
@@ -377,6 +378,10 @@ transform: scale(1);
 label {
 font-size: 16px;
 font-weight: 500;
+}
+
+main {
+  padding: 15% 3%;
 }
 
 /* o select e radio button falta fazer */

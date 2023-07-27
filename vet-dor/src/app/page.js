@@ -9,16 +9,18 @@ import Login_Form from './components/LoginForm/Login_Form'
 
 export default function Home() {
   return (
-    <main >
+    <span>
       {<Header/>}
 
-      {/*<Cadastro_Form/>*/}
+      <main>
+        {/*<Cadastro_Form/>*/}
 
-      <Login_Form />
+        <Login_Form />
 
-      {/* <AniProfile/> */}
+        {/* <AniProfile/> */}
+      </main>
       
       {/* <Footer/> */}
-    </main>
+    </span>
   )
 }

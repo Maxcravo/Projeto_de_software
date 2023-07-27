@@ -1,6 +1,6 @@
 import React from "react";
 import { LogIn } from "react-feather";
-const logo = "/assets/Logo_temp.png";
+const logo = "/assets/logo-verde-branco.png";
 import "./header.css";
 
 export default function Header() {
