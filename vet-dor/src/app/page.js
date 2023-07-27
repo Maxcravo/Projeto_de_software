@@ -13,11 +13,11 @@ export default function Home() {
       {<Header/>}
 
       <main>
-        {<Cadastro_Form/>}
+        {/* {<Cadastro_Form/>} */}
 
         {/* <Login_Form /> */}
 
-        {/* <AniProfile/> */}
+        {<AniProfile/>}
       </main>
       
       {<Footer/>}

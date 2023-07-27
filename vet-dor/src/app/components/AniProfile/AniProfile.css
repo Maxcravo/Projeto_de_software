@@ -18,8 +18,19 @@ body{
   display: flex;
   flex-direction: column;
   background-color: #D6E5E5;
-  width: 40%;
+  width: 70%;
   align-items: center;
+  border-radius: 10px;
+}
+
+form {
+  width: 100%;
+}
+
+.foto-botao {
+  display: grid;
+  justify-items: center;
+  row-gap: 10px;
 }
 
 .AniProfile_flex h1{
@@ -46,10 +57,13 @@ body{
 }
 
 .Profile_data{
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  margin: 2%;
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5%;
+  /* width: 300px;
+  margin: 2%; */
 }
 
 .Profile_data label{
@@ -67,4 +81,13 @@ body{
   border: none;
   display: flex;
   
+}
+
+div.first_div input, div.second_div input {
+  width: auto;
+}
+
+div.first_div, div.second_div {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr
 }
