@@ -7,14 +7,11 @@ export default function Footer() {
   return(
 <div className="footer_Flex" >
     <div className="footer_Info"> 
-     <span  >
-        Sobre a Clinica
+     <span>
+      <a class="nav-bar-item sobre-clinica" href="">Sobre a clínica</a>
      </span>
      <span>
-        Tabela de preços
-     </span>
-     <span>
-        Desenvolvedores
+     <a class="nav-bar-item dev" href="">Desenvolvedores</a>
        </span>
     </div>
     <h1>CONTATO</h1>
