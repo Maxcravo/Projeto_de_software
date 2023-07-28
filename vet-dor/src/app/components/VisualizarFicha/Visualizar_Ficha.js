@@ -1,12 +1,6 @@
-"use client"
+// "use client"
 import "./visualizar_ficha.css"
-import { useState } from "react";
-// imports referentes a implementação do firebase
-import { getDatabase } from "@firebase/database";
-import { database } from "@/app/controles/Firebase";
-import controladorCadastro from "@/app/controles/controladores/controladorCadastro";
-
-
+const Sample_pdf = "./assets/sample-pdf.pdf" + "#page=1&zoom=100" //esse page e zoom é pra formatar como mostra o pdf
 
 export default function Visualizar_Ficha(){
 
@@ -89,55 +83,58 @@ export default function Visualizar_Ficha(){
 
 
     return(
-        <main>
-            <div class="form">
-                <h1>Ficha do Pet</h1>
-                <div class="header-info">
-                    <div class="left">
-                        <img class="perfil-cachorro" src="https://pegadanatural.com.br/wp-content/uploads/3-maneiras-de-cuidar-do-seu-filhote-de-cachorro-com-qualidade.jpg" alt=""/>
-                        <h2>Caramelinho</h2>
-                    </div>
-                    
-
-                    <div class="right">
-                        <div class="info-ficha">
-                            <div class="item">
-                                <label for="medico">Médico Veterinário</label>
-                                <input type="text" name="medico" id="medico" value="Fulaninho Silva" readonly/>
-                            </div>
-                            
-                            <div class="item">
-                                <label for="crm">CRM</label>
-                                <input type="text" name="crm" id="crm" value="123456789" readonly/>
-                            </div>
-                            
-                            <div class="item">
-                                <label for="data">Data</label>
-                                <input type="text" name="data" id="data" value="12/01/2023" readonly/>
-                            </div>
-                            
-                        </div>
-                    </div>
+        <div class="form">
+            <h1>Ficha do Pet</h1>
+            <div class="header-info">
+                <div class="left">
+                    <img class="perfil-cachorro" src="https://pegadanatural.com.br/wp-content/uploads/3-maneiras-de-cuidar-do-seu-filhote-de-cachorro-com-qualidade.jpg" alt=""/>
+                    <h2>Caramelinho</h2>
                 </div>
+                
 
-                <div class="area-pdfs">
-                    <div class="pdf">
-                        <p class="etiqueta grande laranja">Diagnóstico</p>
-                        <object data="sample-pdf.pdf#page=1&zoom=50" type="application/pdf" class="pdf-diagnostico" name="pdf-diagnostico"> <p>Não foi possível carregar o PDF. Baixe o arquivo diretamente.</p> </object>
+                <div class="right">
+                    <div class="info-ficha">
+                        <div class="item">
+                            <label for="medico">Médico Veterinário</label>
+                            <input type="text" name="medico" id="medico" value="Fulaninho Silva" readonly/>
+                        </div>
+                        
+                        <div class="item">
+                            <label for="crm">CRM</label>
+                            <input type="text" name="crm" id="crm" value="123456789" readonly/>
+                        </div>
+                        
+                        <div class="item">
+                            <label for="data">Data</label>
+                            <input type="text" name="data" id="data" value="12/01/2023" readonly/>
+                        </div>
+                        
                     </div>
-
-                    <div class="pdf">
-                        <p class="etiqueta grande laranja">Laudo</p>
-                        <object data="sample-pdf.pdf#page=1&zoom=50" type="application/pdf" class="pdf-laudo" name="pdf-laudo"> <p>Não foi possível carregar o PDF. Baixe o arquivo diretamente.</p> </object>
-                    </div>
-
-                    <div class="pdf">
-                        <p class="etiqueta grande laranja">Receitas</p>
-                        <object data="sample-pdf.pdf#page=1&zoom=50" type="application/pdf" class="pdf-receitas" name="pdf-receitas"> <p>Não foi possível carregar o PDF. Baixe o arquivo diretamente.</p> </object>
-                    </div>
-                    
                 </div>
             </div>
-        </main>
+
+            <div class="area-pdfs">
+                <div class="pdf">
+                    <p class="etiqueta grande laranja">Diagnóstico</p>
+                    <a class="link texto" href="">Baixar arquivo</a>
+                    <object data = {Sample_pdf} type="application/pdf" class="pdf-diagnostico" name="pdf-diagnostico"> <p>Não foi possível carregar o PDF. Baixe o arquivo diretamente.</p></object>
+
+                    {/* data="sample-pdf.pdf#page=1&zoom=50" pra colocar da pasta ao invés da constante*/}
+                </div>
+
+                <div class="pdf">
+                    <p class="etiqueta grande laranja">Laudo</p>
+                    <a class="link texto" href="">Baixar arquivo</a>
+                    <object data = {Sample_pdf} type="application/pdf" class="pdf-laudo" name="pdf-laudo"> <p>Não foi possível carregar o PDF. Baixe o arquivo diretamente.</p> </object>
+                </div>
+
+                <div class="pdf">
+                    <p class="etiqueta grande laranja">Receitas</p>
+                    <a class="link texto" href="">Baixar arquivo</a>
+                    <object data = {Sample_pdf} type="application/pdf" class="pdf-receitas" name="pdf-receitas"> <p>Não foi possível carregar o PDF. Baixe o arquivo diretamente.</p> </object>
+                </div>
+                
+            </div>
+        </div>
     )
 }   

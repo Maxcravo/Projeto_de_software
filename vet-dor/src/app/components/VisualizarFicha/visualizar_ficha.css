@@ -4,6 +4,8 @@
     padding: 32px;
     display: grid;
     justify-items: center;
+    width: max-content;
+    margin: auto;
 }
 
 div.header-info {
@@ -43,8 +45,8 @@ div.left img {
 
 .area-pdfs {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 49px;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 49px;
 }
 
 .pdf {
@@ -54,6 +56,10 @@ div.left img {
 }
 
 object {
-    height: 30rem;
-    width: 16rem;
+    height: 40rem;
+    width: 35rem;
+}
+
+object p {
+    text-align: center;
 }

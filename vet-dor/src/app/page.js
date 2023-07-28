@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer'
 import Cadastro_Form from './components/CadastroForm/Cadastro_Form'
 import AniProfile from './components/AniProfile/AniProfile'
 import Login_Form from './components/LoginForm/Login_Form'
+import Visualizar_Ficha from './components/VisualizarFicha/Visualizar_Ficha'
 
 export default function Home() {
   return (
@@ -17,7 +18,9 @@ export default function Home() {
 
         {/* <Login_Form /> */}
 
-        {<AniProfile/>}
+        {/* {<AniProfile/>} */}
+
+        {<Visualizar_Ficha/>}
       </main>
       
       {<Footer/>}
