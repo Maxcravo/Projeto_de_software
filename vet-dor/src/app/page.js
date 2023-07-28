@@ -7,12 +7,15 @@ import Cadastro_Form from './components/CadastroForm/Cadastro_Form'
 import AniProfile from './components/AniProfile/AniProfile'
 import Login_Form from './components/LoginForm/Login_Form'
 import Visualizar_Ficha from './components/VisualizarFicha/Visualizar_Ficha'
+import Homepage from './components/Home/Homepage'
 
 export default function Home() {
   return (
     <span>
       {<Header/>}
 
+      {<Homepage/>} 
+      {/* tem que ser fora da main a home */}
       <main>
         {/* {<Cadastro_Form/>} */}
 
@@ -20,7 +23,7 @@ export default function Home() {
 
         {/* {<AniProfile/>} */}
 
-        {<Visualizar_Ficha/>}
+        {/* {<Visualizar_Ficha/>} */}
       </main>
       
       {<Footer/>}
