@@ -84,7 +84,7 @@ export default function Cadastro_Form(){
           <label for="repassword" >Repita a senha</label>
           <input id="repassword" name="repassword" onChange={(e)=> handleInputChange(e)} required type="password"/>
 
-          <div className="form_button" >
+          <div className="form_button cadastro" >
             <button className="submit_google botao normal" type="submit">CADASTRAR COM GOOGLE </button>
             <button className="submit_trad botao verde normal" type="submit"> CADASTRAR </button>
           </div>

@@ -110,17 +110,13 @@ input::-webkit-inner-spin-button {
   color: #245D61;
 }
 
-.form_button{
+.form_button.cadastro{
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 10px;
 }
 
-.form_button .botao {
-  width: 190px;
-}
-
-.form_button button{
+.form_button.cadastro button{
   display: flex;
   height: 42px;
   font-weight: 600;
