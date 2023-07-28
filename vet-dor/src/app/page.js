@@ -14,13 +14,13 @@ export default function Home() {
       {<Header/>}
 
       <main>
-        {<Cadastro_Form/>}
+        {/* {<Cadastro_Form/>} */}
 
         {/* <Login_Form /> */}
 
         {/* {<AniProfile/>} */}
 
-        {/* {<Visualizar_Ficha/>} */}
+        {<Visualizar_Ficha/>}
       </main>
       
       {<Footer/>}
