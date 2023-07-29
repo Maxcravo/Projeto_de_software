@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
 
-.all {
+.all.userhome {
     display: grid;
     grid-template-columns: 1fr 3fr;
     column-gap: 3rem;
+    justify-items: center;
 }
 
 .prox-consulta {

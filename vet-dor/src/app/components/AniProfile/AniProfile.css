@@ -64,6 +64,7 @@ form {
   column-gap: 5%;
   /* width: 300px;
   margin: 2%; */
+  width: -webkit-fill-available;
 }
 
 .Profile_data label{

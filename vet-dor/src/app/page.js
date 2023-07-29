@@ -19,13 +19,13 @@ export default function Home() {
       {/* {<Homepage/>}  */}
       {/* tem que ser fora da main a home */}
       <main>
-        {/* {<Cadastro_Form/>} */}
+        {<Cadastro_Form/>}
 
         {/* <Login_Form /> */}
 
         {/* {<AniProfile/>} */}
 
-        {<Visualizar_Ficha/>}
+        {/* {<Visualizar_Ficha/>} */}
 
         {/* {<PerfilUsuario/>} */}
 

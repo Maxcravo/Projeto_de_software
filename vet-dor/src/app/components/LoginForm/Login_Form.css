@@ -10,10 +10,14 @@
   /* padding: 20px 0; */
 }
 
+form.form-login {
+  width: max-content;
+}
+
 .form_Flex{
   display: flex;
   flex-direction: row;
-  width: 100%;
+  /* width: 100%; */
   align-items:center;
   justify-content: center;
   margin-bottom: 2.5%;
@@ -34,6 +38,7 @@ label{
 .login .first_div{
   display: flex;
   flex-direction: column;
+  width: -webkit-fill-available;
 
 }
 

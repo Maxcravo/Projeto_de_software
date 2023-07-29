@@ -17,7 +17,7 @@ import { Droplet } from "react-feather";
 
 export default function UserHome() {
   return(
-    <div class="all">
+    <div class="all userhome">
       <div class="esquerda">
         <div class="welcome">
           <h1>Bem-vindo(a), {user}!</h1>

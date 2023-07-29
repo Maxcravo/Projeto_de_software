@@ -47,8 +47,8 @@ export default function Login_Form(){
   return(
       <div className="form_All"> 
 
-      <div className="form_Flex form login">
-        <form>
+      <div className="form_Flex login">
+        <form class="form-login">
           <h2>Faça login para gerenciar seus pets</h2>
           <div className="first_div" >
             <label for="name" >Nome de usuário</label>
