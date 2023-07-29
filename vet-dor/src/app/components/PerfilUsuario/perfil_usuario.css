@@ -17,12 +17,15 @@ form {
     column-gap: 60px;
     row-gap: 21px;
     justify-items: end;
+    align-items: center;
 }
 
-.direita, .esquerda {
+.form-dados .direita, .form-dados .esquerda {
     display: grid;
     grid-template-rows: 1fr 1fr;
     row-gap: 10px;
+    width: auto;
+    padding: 0;
 }
 
 .input {

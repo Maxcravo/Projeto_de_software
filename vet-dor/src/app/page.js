@@ -9,6 +9,7 @@ import Login_Form from './components/LoginForm/Login_Form'
 import Visualizar_Ficha from './components/VisualizarFicha/Visualizar_Ficha'
 import Homepage from './components/Home/Homepage'
 import UserHome from './components/UserHome/UserHome'
+import PerfilUsuario from './components/PerfilUsuario/PerfilUsuario'
 
 export default function Home() {
   return (
@@ -26,7 +27,9 @@ export default function Home() {
 
         {/* {<Visualizar_Ficha/>} */}
 
-        {<UserHome/>}
+        {<PerfilUsuario/>}
+
+        {/* {<UserHome/>} */}
       </main>
       
       {<Footer/>}
