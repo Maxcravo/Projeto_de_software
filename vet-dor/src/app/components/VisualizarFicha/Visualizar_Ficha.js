@@ -116,22 +116,17 @@ export default function Visualizar_Ficha(){
             <div class="area-pdfs">
                 <div class="pdf">
                     <p class="etiqueta grande laranja">Diagnóstico</p>
-                    <a class="link texto" href="">Baixar arquivo</a>
-                    <object data = {Sample_pdf} type="application/pdf" class="pdf-diagnostico" name="pdf-diagnostico"> <p>Não foi possível carregar o PDF. Baixe o arquivo diretamente.</p></object>
-
-                    {/* data="sample-pdf.pdf#page=1&zoom=50" pra colocar da pasta ao invés da constante*/}
+                    <textarea cols="30" rows="10" class="ficha-txt" id="diagnostico" name="diagnostico"></textarea>
                 </div>
 
                 <div class="pdf">
                     <p class="etiqueta grande laranja">Laudo</p>
-                    <a class="link texto" href="">Baixar arquivo</a>
-                    <object data = {Sample_pdf} type="application/pdf" class="pdf-laudo" name="pdf-laudo"> <p>Não foi possível carregar o PDF. Baixe o arquivo diretamente.</p> </object>
+                    <textarea cols="30" rows="10" class="ficha-txt" id="laudo" name="laudo"></textarea>
                 </div>
 
                 <div class="pdf">
                     <p class="etiqueta grande laranja">Receitas</p>
-                    <a class="link texto" href="">Baixar arquivo</a>
-                    <object data = {Sample_pdf} type="application/pdf" class="pdf-receitas" name="pdf-receitas"> <p>Não foi possível carregar o PDF. Baixe o arquivo diretamente.</p> </object>
+                    <textarea cols="30" rows="10" class="ficha-txt" id="receitas" name="receitas"></textarea>
                 </div>
                 
             </div>

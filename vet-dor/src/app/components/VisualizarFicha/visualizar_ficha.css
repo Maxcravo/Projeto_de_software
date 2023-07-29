@@ -4,7 +4,7 @@
     padding: 32px;
     display: grid;
     justify-items: center;
-    width: max-content;
+    /* width: max-content; */
     margin: auto;
 }
 
@@ -13,6 +13,7 @@ div.header-info {
     grid-column-gap: 10px;
     row-gap: 10px;
     grid-template-columns: 1fr 2fr;
+    justify-items: start;
 }
 
 .info-ficha {
@@ -45,8 +46,8 @@ div.left img {
 
 .area-pdfs {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 49px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 49px;
 }
 
 .pdf {
@@ -62,4 +63,8 @@ object {
 
 object p {
     text-align: center;
+}
+
+.item input {
+    width: auto;
 }

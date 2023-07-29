@@ -25,11 +25,11 @@ export default function Home() {
 
         {/* {<AniProfile/>} */}
 
-        {/* {<Visualizar_Ficha/>} */}
+        {<Visualizar_Ficha/>}
 
         {/* {<PerfilUsuario/>} */}
 
-        {<UserHome/>}
+        {/* {<UserHome/>} */}
       </main>
       
       {<Footer/>}
