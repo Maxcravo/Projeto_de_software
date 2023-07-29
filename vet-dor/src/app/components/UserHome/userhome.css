@@ -56,7 +56,12 @@ span.p-dia{
     width: 7rem;
 }
 
-.direita {
+.botoes .verde {
+    width: 5rem;
+    text-align: center;
+}
+
+.all div.direita {
     background-color: var(--fundo-form);
     border-radius: 10px;
     padding: 34px 42px;
@@ -81,4 +86,5 @@ span.p-dia{
 
 .pet .botao {
     text-align: center;
+    width: 50px;
 }

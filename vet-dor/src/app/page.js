@@ -27,9 +27,9 @@ export default function Home() {
 
         {/* {<Visualizar_Ficha/>} */}
 
-        {<PerfilUsuario/>}
+        {/* {<PerfilUsuario/>} */}
 
-        {/* {<UserHome/>} */}
+        {<UserHome/>}
       </main>
       
       {<Footer/>}
