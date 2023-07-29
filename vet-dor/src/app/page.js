@@ -14,12 +14,12 @@ export default function Home() {
     <span>
       {<Header/>}
 
-      {<Homepage/>} 
+      {/* {<Homepage/>}  */}
       {/* tem que ser fora da main a home */}
       <main>
         {/* {<Cadastro_Form/>} */}
 
-        {/* <Login_Form /> */}
+        <Login_Form />
 
         {/* {<AniProfile/>} */}
 

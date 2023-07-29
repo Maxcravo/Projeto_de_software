@@ -113,6 +113,7 @@ div.form_button{
 } */
 .form_button .botao {
   width: 100%;
+  border: none;
 }
 
 .submit_password{
