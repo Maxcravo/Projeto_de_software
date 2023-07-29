@@ -1,0 +1,39 @@
+form {
+    display: grid;
+    /* grid-template-rows: 1fr 1fr; */
+    justify-items: center;
+    align-items: end;
+
+    background-color: var(--fundo-form);
+    border-radius: 10px;
+    padding: 32px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.dados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 21px;
+    justify-items: end;
+}
+
+.direita, .esquerda {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+}
+
+.input {
+    display:grid;
+}
+
+input {
+    width: 367px;
+}
+
+.botao {
+    text-align: center;
+    width: 150px;
+}
