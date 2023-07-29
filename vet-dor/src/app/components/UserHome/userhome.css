@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+
+.all {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 3rem;
+}
+
+.prox-consulta {
+    background-color: var(--fundo-form);
+    padding: 29px 18px;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    display: grid;
+    justify-items: center;
+}
+
+.prox-consulta .botoes {
+    display: grid;
+    row-gap: 21px;
+    justify-items: center;
+    text-align: center;
+    margin-top: 15px;
+}
+
+div.calendario {
+    margin-top: 10px;
+    background-color: var(--fundo);
+    border-radius: 10px;
+    text-align: center;
+    height: auto;
+}
+
+div.mes {
+    background-color: var(--verde);
+    border-radius: 10px 10px 0 0;
+    padding: 3px;
+}
+
+span.p-mes, span.p-dia {
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+span.p-mes{
+    font-size: 20px;
+}
+
+span.p-dia{
+    font-size: 64px;
+}
+
+.botoes .laranja {
+    width: 7rem;
+}
+
+.direita {
+    background-color: var(--fundo-form);
+    border-radius: 10px;
+    padding: 34px 42px;
+    width: 30rem;
+}
+
+.pet {
+    display: grid;
+    justify-items: center;
+    row-gap: 5px;
+}
+
+.fileira-pets {
+    display: flex;
+    column-gap: 35px;
+    width: auto;
+}
+
+.pet .foto-pet {
+    width: 90px;
+}
+
+.pet .botao {
+    text-align: center;
+}
