@@ -1,0 +1,81 @@
+.form {
+    background-color: var(--fundo-form);
+    border-radius: 10px;
+    padding: 32px;
+    display: grid;
+    justify-items: center;
+}
+
+input{
+    width: 40% !important;
+}
+
+div.header-info {
+    display: grid;
+    grid-column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 1fr 2fr;
+}
+
+.info-ficha {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr,;
+    column-gap: 15px;
+}
+
+div.item {
+    display: flex;
+    flex-direction:column;
+}
+
+div.right {
+    display: grid;
+    grid-template-columns: auto;
+    align-content: center;
+}
+
+div.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.left img {
+    border-radius: 100px;
+    width: 166px;
+}
+
+.area-pdfs {
+    margin-top: 2%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.area-envio {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 49px;
+}
+
+.pdf {
+    display: grid;
+    justify-items: center;
+}
+
+.fichaButton {
+    width: 250px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.area-pdfs button {
+    margin-top: 9%;
+    border: none;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
