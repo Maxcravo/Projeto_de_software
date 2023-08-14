@@ -13,7 +13,7 @@ Max Felipe
 
 Os Orientadores Foram:
 
-Isabelle Rizzo - Orientado, mentora e programadores auxilair.
+Isabelle Rizzo - Mentora e programadora auxilair.
   * Ressaltar o auxilio da mesma, na construção das rotas e na padronização da comunicação Front-Back.
     
 Eduardo Kinder - Professor Orientador e Avaliador do projeto
