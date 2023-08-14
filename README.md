@@ -6,7 +6,9 @@ Disclaimer: Os commits realizados pelo nome apenas de Max Felipe, São também c
 Este projeto Foi desenvolvido por:
 
 Sarah Ellen 
+
 Caroline de Oliveira
+
 Max Felipe 
 
 Os Orientadores Foram:
