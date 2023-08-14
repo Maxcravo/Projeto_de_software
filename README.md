@@ -1,6 +1,8 @@
 # Projeto_de_software
 Trabalho da disciplina Projeto de Software (IC819).
 
+Disclaimer: Os commits realizados pelo nome apenas de Max Felipe, São também códigos elaborados, por todos os participantes, aqui mencionados. 
+
 Este projeto Foi desenvolvido por:
 
 Sarah Ellen 
